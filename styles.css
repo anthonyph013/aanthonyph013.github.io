@@ -1,6 +1,25 @@
+/* add padding space above body to account for the navbar blocking elements */
 body {
 	padding-top: 50px;
 	background-color: white;
+}
+
+section {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+/* add padding space above a class element being reference to account for navbar blocking elements */
+.navbar-space {
+	padding-top: 50px;
+}
+
+.banner {
+	background-image: url("images/stock-image.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 

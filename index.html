@@ -1,28 +1,32 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en-US">
 	<head>
 		<title>Tony Pham's Portfolio</title>
 		<meta charset = "UTF-8">
 		<link rel="stylesheet" href="styles.css"> 
+		<link rel="stylesheet" href="timeline.css">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 		<!-- Bootstrap CSS -->
 	        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 			
-
+		<!-- Bootstrap Script-->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		<!-- Bootstrap navigation bar -->
 		<header id="header">
-			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
+			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 				<!-- Button for smaller screens -->
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div id="navbarCollapse" class="collapse navbar-collapse">
 					<!-- Links to each section -->
-					<ul class="navbar-nav ml-auto">
+					<ul class="navbar-nav mx-auto">
 						<li class="nav-item">
 							<a class="nav-link text-light active" href="#About">About</a>
 						</li>
@@ -39,7 +43,7 @@
 							<a class="nav-link text-light" href="#Projects">Projects</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-light" href="#Contact">Contact me</a>
+							<a class="nav-link text-light" href="#Contact">Contact Me</a>
 						</li>
 					</ul>
 				</div>
@@ -48,60 +52,100 @@
 		</header>
 
 		<!-- Main image section -->
-		<section class "container-fluid border border-primary" style="background-image:url(images/stockimg.jpg);">
-			<div class="container py-5" style="background:grey;">
-				<p class="text-center"><a class="text-dark h1" href="#">Tony Pham</a></p>
-				<p class="text-dark h1 text-center">Software Engineer</p>
+		<section class "container-fluid border">
+			<div class="jumpotron banner border py-5">
+				<p class="text-center border"><a class="text-dark h1" href="#">Tony Pham</a></p>
+				<p class="text-dark h2 text-center border">Software Engineer</p>
 			</div>
 		</section>
 
 
 		<!-- About section -->
 		<section class="container border border-primary">
-			<div class="container mt-5 border border-secondary">
-				<p class="display-1 pt-5" id="About">About</p>	
+			<div class="container mt-5 border border-secondary navbar-space" id="About">
+				<h1 class="text-center">Hello</h1>
 
-				<div class="container" style="background-color:white; padding-bottom: 500px;"></div>
 			</div>
 		</section>
 
+
 		<!-- Education section -->
-		<section class="container" style="background-color:orange;">
-			<p class="display-1" id="Education" style="text-align: center;">Education</p>	
-			<div class="container" style="background-color:white; padding-bottom: 500px;"></div>
+		<section class="container border">
+			<div class="container mt-5 border border-secondary navbar-space" id="Education">
+				<h1 class="border text-center"> Education</h1>	
+				<div class="card mx-auto border" style="width: 18rem;">
+					<div class="card-header border">
+						<img class="card-img-bottom img-responsive border" src="images/uci-name.png" alt="uci-seal.jpg>">
+						<h4 class="text-center">Irvine, California</h4>
+					</div>
+					<div class="card-body border py-0">
+						<div class="row border">
+							<div class="col border">
+								<h5 class="text-center border">2014-2019</h5>
+							</div>
+							<div class="col border">
+								<h5 class="card-title text-center">Bachelor of Science in Computer Science</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
+		
 
 		<!-- Experience section -->
-		<section class="container" style="background-color:purple;">
-			<p class="display-1" id="Experience" style="text-align: center;">Experience</p>	
-
-			<div class="container" style="background-color:white; padding-bottom: 500px;"></div>
+		<section class="container border">
+			<div class="container mt-5 border border-secondary navbar-space" id="Experience">
+				<h1 class="border text-center">Experiences</h1>	
+			</div>
 		</section>
 
 		<!-- Skills section -->
-		<section class="container" style="background-color:yellow;">
-			<p class="display-1" id="Skills" style="text-align: center;">Skills</p>	
-				<div class="container" style="background-color:white; padding-bottom: 500px;"></div>
+		<section class="container border">
+			<div class="container mt-5 border border-secondary navbar-space" id="Skills">
+				<h1 class="border text-center">Skills</h1>	
+				<div class="row border">
+					<div class="col border">
+					</div>
+					<div class="col border">
+					</div>
+					<div class="col border">
+					</div>
+				</div>
+			</div>
 		</section>
 
 		<!-- Project section -->
-		<section class="container" style="background-color:green;">
-			<p class="display-1" id="Projects" style="text-align: center;">Projects</p>
-				<div class="container" style="background-color:white; padding-bottom: 500px;"></div>
+		<section class="container border">
+			<div class="container mt-5 border border-secondary navbar-space" id="Projects">
+				<h1 class="border text-center">Projects</h1>	
+				<a href="https://github.com/anthonyph013"><button>Link to Github</button></a><br>
+			</div>
 		</section>
 
 		<!-- Contact section-->
-		<section class="container" style="background-color:grey;">
-			<p class="display-1" id="Contact" style="text-align: center;">Contact</p>
+		<section class="container border">
+			<h1 class="border text-center">Contact Me</h1>	
+			<!-- Email input form -->
+			<form action="" class="was-validated">
+				<div class="form-group mx-5 border">
+					<label for="inputContactName" class="sr-only">Input Name</label>	
+					<input type="text" class="form-control" id="inputContactName" name="contactName" placeholder="Enter your name" required><br>
+				</div>
+				<div class="form-group mx-5 border">
+					<label for="inputContactEmail" class="sr-only">Input Email Address</label>
+					<input type="email" class="form-control" id="inputContactEmail" name="contactEmail" placeholder="Enter your email address" required><br>
+				</div>
+				<div class="form-group mx-5 border">
+					<label for="inputContactMessage" class="sr-only">Input Message</label>
+					<textarea class="form-control" id="inputContactMessage" rows="5" name="contactMessage" placeholder="Enter your message" required></textarea>
+				</div>
+				<button class="btn btn-dark" type="submit">Submit</button>
+			</form>
 		</section>
 
 		
-		</p>
-		<a href="https://github.com/anthonyph013"><button>Link to porfolio</button></a><br>
 	
-		<!-- Bootstrap CSS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		
 	  </body>
 </html>
