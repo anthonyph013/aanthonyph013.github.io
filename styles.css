@@ -10,6 +10,10 @@ section {
 
 }
 
+.thin {
+    width:80%;
+}
+
 /* add padding space above a class element being reference to account for navbar blocking elements */
 .navbar-space {
 	padding-top: 50px;

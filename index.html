@@ -1,21 +1,26 @@
 ﻿<!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<title>Tony Pham's Portfolio</title>
-		<meta charset = "UTF-8">
-		<link rel="stylesheet" href="styles.css"> 
-		<link rel="stylesheet" href="timeline.css">
+<head>
+    <title>Tony Pham's Portfolio</title>
+    <meta charset="UTF-8">
 
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-		<!-- Bootstrap CSS -->
-	        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-			
-		<!-- Bootstrap Script-->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-	</head>
+    <!-- Fontawesome Script-->
+    <script src="https://kit.fontawesome.com/f94facd946.js"></script>
+    <!-- Bootstrap Script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- luisrudge's timeline css-->
+    <link rel="stylesheet" href="timeline.css">
+
+    <!-- My scripts-->
+    <link rel="stylesheet" href="styles.css">
+</head>
 	<body>
 		<!-- Bootstrap navigation bar -->
 		<header id="header">
@@ -52,7 +57,7 @@
 		</header>
 
 		<!-- Main image section -->
-		<section class "container-fluid border">
+		<section class="container-fluid border">
 			<div class="jumpotron banner border py-5">
 				<p class="text-center border"><a class="text-dark h1" href="#">Tony Pham</a></p>
 				<p class="text-dark h2 text-center border">Software Engineer</p>
@@ -61,8 +66,8 @@
 
 
 		<!-- About section -->
-		<section class="container border border-primary">
-			<div class="container mt-5 border border-secondary navbar-space" id="About">
+		<section class="container border">
+			<div class="container border navbar-space" id="About">
 				<h1 class="text-center">Hello</h1>
 
 			</div>
@@ -71,8 +76,8 @@
 
 		<!-- Education section -->
 		<section class="container border">
-			<div class="container mt-5 border border-secondary navbar-space" id="Education">
-				<h1 class="border text-center"> Education</h1>	
+			<div class="container border navbar-space" id="Education">
+				<h1 class="text-center border"> Education</h1>	
 				<div class="card mx-auto border" style="width: 18rem;">
 					<div class="card-header border">
 						<img class="card-img-bottom img-responsive border" src="images/uci-name.png" alt="uci-seal.jpg>">
@@ -94,16 +99,42 @@
 		
 
 		<!-- Experience section -->
-		<section class="container border">
-			<div class="container mt-5 border border-secondary navbar-space" id="Experience">
-				<h1 class="border text-center">Experiences</h1>	
+		<section class="container thin border">
+			<div class="container border navbar-space" id="Experience">
+				<h1 class="text-center border">Experiences</h1>	
+                <div class="border">
+                    <ul class="timeline border">
+                        <li class="border">
+                            <div class="timeline-badge android">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <div class="timeline-panel short-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">2018</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>April - June</p>
+                                </div>
+                            </div>
+                            <div class="timeline-panel timeline-panel-inverted">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Front-End Android Developer</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>blah blah</p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
 			</div>
 		</section>
 
 		<!-- Skills section -->
 		<section class="container border">
-			<div class="container mt-5 border border-secondary navbar-space" id="Skills">
-				<h1 class="border text-center">Skills</h1>	
+			<div class="container border navbar-space" id="Skills">
+				<h1 class="text-center border">Skills</h1>	
 				<div class="row border">
 					<div class="col border">
 					</div>
@@ -117,32 +148,38 @@
 
 		<!-- Project section -->
 		<section class="container border">
-			<div class="container mt-5 border border-secondary navbar-space" id="Projects">
-				<h1 class="border text-center">Projects</h1>	
+			<div class="container navbar-space border" id="Projects">
+				<h1 class="text-center border">Projects</h1>	
 				<a href="https://github.com/anthonyph013"><button>Link to Github</button></a><br>
 			</div>
 		</section>
 
 		<!-- Contact section-->
-		<section class="container border">
-			<h1 class="border text-center">Contact Me</h1>	
-			<!-- Email input form -->
-			<form action="" class="was-validated">
-				<div class="form-group mx-5 border">
-					<label for="inputContactName" class="sr-only">Input Name</label>	
-					<input type="text" class="form-control" id="inputContactName" name="contactName" placeholder="Enter your name" required><br>
-				</div>
-				<div class="form-group mx-5 border">
-					<label for="inputContactEmail" class="sr-only">Input Email Address</label>
-					<input type="email" class="form-control" id="inputContactEmail" name="contactEmail" placeholder="Enter your email address" required><br>
-				</div>
-				<div class="form-group mx-5 border">
-					<label for="inputContactMessage" class="sr-only">Input Message</label>
-					<textarea class="form-control" id="inputContactMessage" rows="5" name="contactMessage" placeholder="Enter your message" required></textarea>
-				</div>
-				<button class="btn btn-dark" type="submit">Submit</button>
-			</form>
-		</section>
+        <section class="container border">
+            <!-- Email input form -->
+            <!-- Using google form-->
+            <div class="container navbar-space border" id="Contact">
+                <!-- Make embedded Google Form responsive by changing width="100%"-->
+                <iframe class="border" src="https://docs.google.com/forms/d/e/1FAIpQLSfFPH9lsKowi_8Z7rN3-5teQKrb8cHN90nC6JWVw09RoPWPZg/viewform?embedded=true" width="100%" height="702" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+            <!-- Form created using bootstrap and AWS Lambda and AWS SES
+            <form action="" class="was-validated">
+                <div class="form-group mx-5 border">
+                    <label for="inputContactName" class="sr-only">Input Name</label>
+                    <input type="text" class="form-control" id="inputContactName" name="contactName" placeholder="Enter your name" required><br>
+                </div>
+                <div class="form-group mx-5 border">
+                    <label for="inputContactEmail" class="sr-only">Input Email Address</label>
+                    <input type="email" class="form-control" id="inputContactEmail" name="contactEmail" placeholder="Enter your email address" required><br>
+                </div>
+                <div class="form-group mx-5 border">
+                    <label for="inputContactMessage" class="sr-only">Input Message</label>
+                    <textarea class="form-control" id="inputContactMessage" rows="5" name="contactMessage" placeholder="Enter your message" required></textarea>
+                </div>
+                <button class="btn btn-dark" type="submit">Submit</button>
+            </form>
+            -->
+        </section>
 
 		
 	

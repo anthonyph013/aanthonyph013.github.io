@@ -2,6 +2,7 @@
  * CSS timeline created by luisrudge taken in August 2019
  * Bootstrap 3.0.3
  * taken from https://bootsnipp.com/snippets/OzQj 
+ * My additions are marked by comments
  */
 .timeline {
     list-style: none;
@@ -116,6 +117,27 @@
                 left: -14px;
                 right: auto;
             }
+        /* Addition: Added class with right panel*/
+        .timeline > li > .timeline-panel-inverted {
+            float: right;
+        }
+            .timeline > li > .timeline-panel-inverted:before {
+                border-left-width: 0;
+                border-right-width: 15px;
+                left: -15px;
+                right: auto;
+            }
+
+            .timeline > li > .timeline-panel-inverted:after{
+                border-left-width: 0;
+                border-right-width: 14px;
+                left: -14px;
+                right: auto;
+            }
+        .timeline > li > .short-panel {
+            width: 20%;
+            margin-left: 26%;
+        }
 
 .timeline-badge.primary {
     background-color: #2e6da4 !important;
@@ -135,6 +157,11 @@
 
 .timeline-badge.info {
     background-color: #5bc0de !important;
+}
+
+/* Addition: Added color android green*/
+.timeline-badge.android {
+    background-color: #97c024 !important;
 }
 
 .timeline-title {
