@@ -4,21 +4,34 @@ body {
 	background-color: white;
 }
 
+footer {
+    background-color: gray;
+}
+
+/* Add spacing in between each section*/
 section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 
 }
 
+/* Make containers thinner*/
 .thin {
-    width:80%;
+    width: 70%;
+}
+/* Do not reduce width of containers drastically for smaller screens*/
+@media (max-width: 767px) {
+    .thin {
+        width: 90%;
+    }
 }
 
-/* add padding space above a class element being reference to account for navbar blocking elements */
+/* Add padding space above a class element being reference to account for navbar blocking elements */
 .navbar-space {
 	padding-top: 50px;
 }
 
+/* Set banner image*/
 .banner {
 	background-image: url("images/stock-image.png");
 	background-repeat: no-repeat;
