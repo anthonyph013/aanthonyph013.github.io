@@ -15,28 +15,29 @@ section {
 
 }
 
+/*  Set banner image and size*/
+.banner {
+    background-image: url("images/stock-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+}
+
+/*  Add padding space above a class element being reference to account for navbar blocking elements */
+.navbar-space {
+    padding-top: 50px;
+}
+
 /*  Make containers thinner*/
 .thin {
     width: 70%;
 }
 
-
-/*  Add padding space above a class element being reference to account for navbar blocking elements */
-.navbar-space {
-	padding-top: 50px;
-}
-
-/*  Set banner image*/
-.banner {
-	background-image: url("images/stock-image.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-
 /*  Partial Collapse
     base css taken from
     https://stackoverflow.com/questions/52332952/can-we-use-partial-collapse-concept-in-bootstrap-4
+    modified to fit my document
 */
 .timeline-body > div > .collapsed:after {
     content: 'Show More';
@@ -73,4 +74,53 @@ section {
     .timeline-body > .collapsing {
         height: 4.5em;
     }
+}
+
+/* Colors */
+.btn-blue1 {
+    background-color: darkblue;
+    color: white;
+    border-color: darkblue;
+}
+
+.btn-blue2 {
+    background-color: blue;
+    color: white;
+    border-color: blue;
+}
+
+.btn-green1 {
+    background-color: forestgreen;
+    color: white;
+    border-color: forestgreen;
+}
+
+.btn-green2 {
+    background-color: limegreen;
+    color: white;
+    border-color: limegreen;
+}
+
+.btn-green3 {
+    background-color: seagreen;
+    color: white;
+    border-color: seagreen;
+}
+
+.btn-grey1 {
+    background-color: whitesmoke;
+    color: black;
+    border-color: whitesmoke;
+}
+
+.btn-red1 {
+    background-color: darkred;
+    color: white;
+    border-color: darkred;
+}
+
+.btn-red2 {
+    background-color: indianred;
+    color: white;
+    border-color: indianred;
 }
