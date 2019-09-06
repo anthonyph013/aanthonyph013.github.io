@@ -134,7 +134,7 @@
                 left: -14px;
                 right: auto;
             }
-        .timeline > li > .short-panel {
+        .timeline > li > .timeline-panel-short {
             width: 20%;
             margin-left: 26%;
         }

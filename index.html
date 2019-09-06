@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147284461-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-147284461-1');
+    </script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -21,168 +32,192 @@
     <!-- My scripts-->
     <link rel="stylesheet" href="styles.css">
 </head>
-	<body>
-		<!-- Bootstrap navigation bar -->
-		<header id="header">
-			<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-				<!-- Button for smaller screens -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div id="navbarCollapse" class="collapse navbar-collapse">
-					<!-- Links to each section -->
-					<ul class="navbar-nav mx-auto">
-						<li class="nav-item">
-							<a class="nav-link text-light active" href="#About">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#Education">Education</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#Experience">Experience</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#Skills">Skills</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#Projects">Projects</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link text-light" href="#Contact">Contact Me</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			
-		</header>
-
-		<!-- Main image section -->
-		<section class="container-fluid border">
-			<div class="jumpotron banner border py-5">
-				<p class="text-center border"><a class="text-dark h1" href="#">Tony Pham</a></p>
-				<p class="text-dark h2 text-center border">Software Engineer</p>
-			</div>
-		</section>
-
-
-		<!-- About section -->
-		<section class="container border">
-			<div class="container border navbar-space" id="About">
-				<h1 class="text-center">Hello</h1>
-
-			</div>
-		</section>
-
-
-		<!-- Education section -->
-		<section class="container border">
-			<div class="container border navbar-space" id="Education">
-				<h1 class="text-center border"> Education</h1>	
-				<div class="card mx-auto border" style="width: 18rem;">
-					<div class="card-header border">
-						<img class="card-img-bottom img-responsive border" src="images/uci-name.png" alt="uci-seal.jpg>">
-						<h4 class="text-center">Irvine, California</h4>
-					</div>
-					<div class="card-body border py-0">
-						<div class="row border">
-							<div class="col border">
-								<h5 class="text-center border">2014-2019</h5>
-							</div>
-							<div class="col border">
-								<h5 class="card-title text-center">Bachelor of Science in Computer Science</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-
-		<!-- Experience section -->
-		<section class="container thin border">
-			<div class="container border navbar-space" id="Experience">
-				<h1 class="text-center border">Experiences</h1>	
-                <div class="border">
-                    <ul class="timeline border">
-                        <li class="border">
-                            <div class="timeline-badge android">
-                                <i class="fab fa-android"></i>
-                            </div>
-                            <div class="timeline-panel short-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">2018</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>April - June</p>
-                                </div>
-                            </div>
-                            <div class="timeline-panel timeline-panel-inverted">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Front-End Android Developer</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>blah blah</p>
-                                </div>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-			</div>
-		</section>
-
-		<!-- Skills section -->
-		<section class="container border">
-			<div class="container border navbar-space" id="Skills">
-				<h1 class="text-center border">Skills</h1>	
-				<div class="row border">
-					<div class="col border">
-					</div>
-					<div class="col border">
-					</div>
-					<div class="col border">
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Project section -->
-		<section class="container border">
-			<div class="container navbar-space border" id="Projects">
-				<h1 class="text-center border">Projects</h1>	
-				<a href="https://github.com/anthonyph013"><button>Link to Github</button></a><br>
-			</div>
-		</section>
-
-		<!-- Contact section-->
-        <section class="container border">
-            <!-- Email input form -->
-            <!-- Using google form-->
-            <div class="container navbar-space border" id="Contact">
-                <!-- Make embedded Google Form responsive by changing width="100%"-->
-                <iframe class="border" src="https://docs.google.com/forms/d/e/1FAIpQLSfFPH9lsKowi_8Z7rN3-5teQKrb8cHN90nC6JWVw09RoPWPZg/viewform?embedded=true" width="100%" height="702" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<body>
+    <!-- Bootstrap navigation bar -->
+    <header id="header">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <!-- Button for smaller screens -->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <!-- Links to each section -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light active" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Contact">Contact Me</a>
+                    </li>
+                </ul>
             </div>
-            <!-- Form created using bootstrap and AWS Lambda and AWS SES
-            <form action="" class="was-validated">
-                <div class="form-group mx-5 border">
-                    <label for="inputContactName" class="sr-only">Input Name</label>
-                    <input type="text" class="form-control" id="inputContactName" name="contactName" placeholder="Enter your name" required><br>
-                </div>
-                <div class="form-group mx-5 border">
-                    <label for="inputContactEmail" class="sr-only">Input Email Address</label>
-                    <input type="email" class="form-control" id="inputContactEmail" name="contactEmail" placeholder="Enter your email address" required><br>
-                </div>
-                <div class="form-group mx-5 border">
-                    <label for="inputContactMessage" class="sr-only">Input Message</label>
-                    <textarea class="form-control" id="inputContactMessage" rows="5" name="contactMessage" placeholder="Enter your message" required></textarea>
-                </div>
-                <button class="btn btn-dark" type="submit">Submit</button>
-            </form>
-            -->
-        </section>
+        </nav>
 
-		
-	
-		
-	  </body>
+    </header>
+    <!-- Main image section -->
+    <section class="container-fluid mt-0 px-0 border">
+        <div class="jumbotron-fluid banner py-5 border">
+            <h1 class="text-center display-2 border"><a class="text-dark" href="#">Tony Pham</a></h1>
+            <p class="text-dark h2 text-center border">Software Engineer</p>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="container thin border">
+        <div class="container border navbar-space" id="About">
+            <h1 class="text-center border">Hello</h1>
+        </div>
+    </section>
+
+    <!-- Education section -->
+    <section class="container thin border">
+        <div class="container border navbar-space" id="Education">
+            <h1 class="text-center border"> Education</h1>
+            <div class="card mx-auto border" style="width: 18rem;">
+                <div class="card-header border">
+                    <img class="card-img-bottom img-responsive border" src="images/uci-name.png" alt="uci-seal.jpg>">
+                    <h4 class="text-center">Irvine, California</h4>
+                </div>
+                <div class="card-body border py-0">
+                    <div class="row border">
+                        <div class="col border">
+                            <h5 class="text-center border">2014-2019</h5>
+                        </div>
+                        <div class="col border">
+                            <h5 class="card-title text-center">Bachelor of Science in Computer Science</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="container thin px-0 border">
+        <div class="container px-0 navbar-space border" id="Experience">
+            <h1 class="text-center border">Work Experience</h1>
+            <div class="border">
+                <ul class="timeline border">
+                    <li class="border">
+                        <div class="timeline-badge android">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <!-- Date goes here-->
+                        <div class="timeline-panel timeline-panel">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title text-center">2018</h4>
+                                <p class="text-center">April - June</p>
+                            </div>
+                            <div class="timeline-body">
+                                <div class="btn btn-primary">Java</div>
+                                <div class="btn btn-danger">XML</div>
+                                <div class="btn btn-success">Android</div>
+                                <div class="btn btn-info">Android Studio</div>
+                                <div class="btn btn-light">UI/UX</div>
+                                <div class="btn btn-light">Front end</div>
+                                <div class="btn btn-light">Documentation</div>
+                            </div>
+                            
+                        </div>
+                        <!-- Experience goes here-->
+                        <div class="timeline-panel timeline-panel-inverted">
+                            <div class="timeline-heading">
+                                <h4 class="timeline-title">Front-End Android Developer</h4>
+                                <div class="row">
+                                    <div class="col">
+                                        <h5 class="text-left font-weight-light">UCI-Nature</h5>
+                                    </div>
+                                    <div class="col">
+                                        <h5 class="text-right font-weight-light">Irvine, CA</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-body collapse show">
+                                <div class="excerpt">
+                                </div>
+                                <div class="collapse" id="experienceAndroid0">
+                                    <p> •	Designed and implemented an Android user interface from scratch for PlantID, a mobile application for identifying plants in the UCI Nature Preserve.</p>
+                                    <p> •	Satisfied client's specifications by being organized and documenting goals, audiences, and constraints.</p>
+                                    <p> •	Improved user experience based on interviews with test users.</p>
+                                    <p> •	Increased modularity by using common XML layouts for multiple activities.</p>
+                                    <p> •	Presented at the Spring Informatics Student Project Showcase 2018.</p>
+                                </div>
+                                <div class="d-flex justify-content-center border">
+                                    <button class="btn btn-dark collapsed" type="button" data-toggle="collapse" data-target="#experienceAndroid0" aria-expanded="false" aria-controls="experienceAndroid0"></button>
+                                </div>
+                            </div>  
+                            
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Skills section -->
+    <section class="container border">
+        <div class="container border navbar-space" id="Skills">
+            <h1 class="text-center border">Skills</h1>
+            <div class="row border">
+                <div class="col border">
+                </div>
+                <div class="col border">
+                </div>
+                <div class="col border">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects section -->
+    <section class="container thin border">
+        <div class="container navbar-space border" id="Projects">
+            <h1 class="text-center border">Projects</h1>
+            <a href="https://github.com/anthonyph013"><button>Link to Github</button></a><br>
+        </div>
+    </section>
+    <!-- Contact section-->
+    <section class="container thin px-0 border">
+        <!-- Email input form -->
+        <!-- Using google form-->
+        <div class="container navbar-space px-0 border" id="Contact">
+            <!-- Make embedded Google Form responsive by changing width="100%"-->
+            <iframe class="border" src="https://docs.google.com/forms/d/e/1FAIpQLSfFPH9lsKowi_8Z7rN3-5teQKrb8cHN90nC6JWVw09RoPWPZg/viewform?embedded=true" width="100%" height="702" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+        <!-- Form created using bootstrap and AWS Lambda and AWS SES
+        <form action="" class="was-validated">
+            <div class="form-group mx-5 border">
+                <label for="inputContactName" class="sr-only">Input Name</label>
+                <input type="text" class="form-control" id="inputContactName" name="contactName" placeholder="Enter your name" required><br>
+            </div>
+            <div class="form-group mx-5 border">
+                <label for="inputContactEmail" class="sr-only">Input Email Address</label>
+                <input type="email" class="form-control" id="inputContactEmail" name="contactEmail" placeholder="Enter your email address" required><br>
+            </div>
+            <div class="form-group mx-5 border">
+                <label for="inputContactMessage" class="sr-only">Input Message</label>
+                <textarea class="form-control" id="inputContactMessage" rows="5" name="contactMessage" placeholder="Enter your message" required></textarea>
+            </div>
+            <button class="btn btn-dark" type="submit">Submit</button>
+        </form>
+        -->
+    </section>
+    <footer>
+        <div style="padding-bottom:500px;">
+        </div>
+    </footer>
+</body>
+
 </html>
+
