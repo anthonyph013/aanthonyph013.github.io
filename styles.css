@@ -1,4 +1,4 @@
-/* add padding space above body to account for the navbar blocking elements */
+/*  add padding space above body to account for the navbar blocking elements */
 body {
 	padding-top: 50px;
 	background-color: white;
@@ -8,30 +8,25 @@ footer {
     background-color: gray;
 }
 
-/* Add spacing in between each section*/
+/*  Add spacing in between each section*/
 section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 
 }
 
-/* Make containers thinner*/
+/*  Make containers thinner*/
 .thin {
     width: 70%;
 }
-/* Do not reduce width of containers drastically for smaller screens*/
-@media (max-width: 767px) {
-    .thin {
-        width: 90%;
-    }
-}
 
-/* Add padding space above a class element being reference to account for navbar blocking elements */
+
+/*  Add padding space above a class element being reference to account for navbar blocking elements */
 .navbar-space {
 	padding-top: 50px;
 }
 
-/* Set banner image*/
+/*  Set banner image*/
 .banner {
 	background-image: url("images/stock-image.png");
 	background-repeat: no-repeat;
@@ -39,5 +34,38 @@ section {
 	background-size: cover;
 }
 
+/*  Partial Collapse
+    base css taken from
+    https://stackoverflow.com/questions/52332952/can-we-use-partial-collapse-concept-in-bootstrap-4
+*/
+.timeline-body > div > .collapsed:after {
+    content: 'Show More';
+}
 
+.timeline-body > div > button:not(.collapsed):after {
+    content: 'Show Less';
+}
 
+.timeline-body > .collapse:not(.show) {
+    display: block;
+    /* height = lineheight * no of lines to display */
+    height: 10em;
+    overflow: hidden;
+}
+
+.timeline-body > .collapsing {
+    height: 4.5em;
+}
+
+@media (max-width: 767px) {
+    /*  Do not reduce width of containers drastically for smaller screens*/
+    .thin {
+        width: 90%;
+    }
+    .timeline-body > .collapse:not(.show) {
+        display: block;
+        /* height = lineheight * no of lines to display */
+        height: 4.5em;
+        overflow: hidden;
+    }
+}
