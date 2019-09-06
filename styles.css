@@ -54,9 +54,11 @@ section {
 }
 
 .timeline-body > .collapsing {
-    height: 4.5em;
+    height: 10em;
 }
 
+
+/* Responsive css*/
 @media (max-width: 767px) {
     /*  Do not reduce width of containers drastically for smaller screens*/
     .thin {
@@ -67,5 +69,8 @@ section {
         /* height = lineheight * no of lines to display */
         height: 4.5em;
         overflow: hidden;
+    }
+    .timeline-body > .collapsing {
+        height: 4.5em;
     }
 }
