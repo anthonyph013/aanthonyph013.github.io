@@ -13,13 +13,23 @@ footer {
 section {
 	margin-top: 10px;
 	margin-bottom: 10px;
-
 }
 
     section.contact-section {
         margin-bottom: 0px;
         background-color: #343a40;
     }
+
+div.section-header {
+    margin-bottom: -10%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    background-color: cornflowerblue;
+}
+
+hr.white-line {
+    border-color: white;
+}
 
 /*  Set banner image and size*/
 .banner {
@@ -41,6 +51,7 @@ section {
     padding: 10px;
 }
 
+
 /* Add black outline around texts. Not applicable in older Firefox versions or IE 11 as of 2019/9 */
 .text-outline {
     -webkit-text-stroke: 1px black;
@@ -56,23 +67,28 @@ section {
     https://stackoverflow.com/questions/52332952/can-we-use-partial-collapse-concept-in-bootstrap-4
     modified to fit my document
 */
-.timeline-body > div > .collapsed:after {
+.partial-collapse > div > .collapsed:after {
     content: 'Show More';
 }
 
-.timeline-body > div > button:not(.collapsed):after {
+.partial-collapse > div > button:not(.collapsed):after {
     content: 'Show Less';
 }
 
-.timeline-body > .collapse:not(.show) {
+.partial-collapse > .collapse:not(.show) {
     display: block;
     /* height = lineheight * no of lines to display */
     height: 10em;
     overflow: hidden;
 }
 
-.timeline-body > .collapsing {
+.partial-collapse > .collapsing {
     height: 10em;
+}
+/* End Partial Collapse */
+
+.w-25-responsive {
+    width: 25%;
 }
 
 
@@ -83,6 +99,9 @@ section {
     .thin {
         width: 90%;
     }
+    .w-25-responsive {
+        width: 30%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -90,16 +109,20 @@ section {
     .thin {
         width: 100%;
     }
-    .timeline-body > .collapse:not(.show) {
+    .partial-collapse > .collapse:not(.show) {
         display: block;
         /* height = lineheight * no of lines to display */
         height: 4.5em;
         overflow: hidden;
     }
-    .timeline-body > .collapsing {
+    .partial-collapse > .collapsing {
         height: 4.5em;
     }
+    .w-25-responsive {
+        width: 70%;
+    }
 }
+/* End Responsive CSS*/
 
 /* Colors */
 .btn-blue1 {
@@ -149,3 +172,4 @@ section {
     color: white;
     border-color: indianred;
 }
+/* End colors */
