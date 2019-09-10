@@ -134,10 +134,11 @@
                 left: -14px;
                 right: auto;
             }
-        .timeline > li > .timeline-panel-short {
-            width: 20%;
-            margin-left: 26%;
-        }
+            .timeline > li > .timeline-panel-short {
+                width: 20%;
+                margin-left: 26%;
+            }
+        /* End Addition */
 
 .timeline-badge.primary {
     background-color: #2e6da4 !important;
