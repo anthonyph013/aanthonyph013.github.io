@@ -9,17 +9,18 @@ footer {
     height: 5em;
 }
 
-/*  Add spacing in between each section*/
+/*  Add spacing in between each section */
 section {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-
+    /* Contact section bg color */
     section.contact-section {
         margin-bottom: 0px;
         background-color: #343a40;
     }
 
+/* Set overlapping section with solid bg color */
 div.section-header {
     margin-bottom: -10%;
     padding-top: 5%;
@@ -27,11 +28,12 @@ div.section-header {
     background-color: cornflowerblue;
 }
 
+/* change color of <hr> tag */
 hr.white-line {
     border-color: white;
 }
 
-/*  Set banner image and size*/
+/*  Set banner image and size */
 .banner {
     background-image: url("images/banner-img.jpg");
     background-repeat: no-repeat;
